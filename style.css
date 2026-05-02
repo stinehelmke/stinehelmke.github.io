@@ -179,7 +179,7 @@ nav a.active {
   margin: 0 auto;
   display: flex;
   gap: 56px;
-  align-items: flex-start;
+  align-items: center; /* vertically center profile + bio */
   padding-right: 40px;
 }
 
@@ -235,15 +235,15 @@ nav a.active {
   border-radius: 18px; /* rounded rectangle */
   box-shadow: 0 8px 20px rgba(0,0,0,0.22);
   position: relative;
-  top: -30px; /* bring it a bit down so it's more centered with the text */
+  transform: translateY(-18px); /* slight lift to overlap hero while staying centered */
   width: 320px; /* slightly smaller on desktop */
-  transition: top 0.2s ease, transform 0.15s ease;
+  transition: transform 0.2s ease;
 }
 
 /* On small screens, don't overlap too much and keep a circular crop */
 @media (max-width: 700px) {
   .profile-photo--overlap {
-    top: -24px;
+    transform: translateY(-12px);
     width: 140px;
     border-radius: 50%;
   }
