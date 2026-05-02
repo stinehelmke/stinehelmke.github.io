@@ -108,13 +108,18 @@ nav a.active {
 }
 
 .hero-name {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 800;
-  font-size: clamp(2.4rem, 7vw, 5.5rem);
+  /* softer, rounded look */
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 4.5vw, 2.4rem);
   color: #fff;
-  margin: 0 0 20px;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
+  margin: 0 0 12px;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  padding: 8px 14px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px; /* pill */
+  display: inline-block;
 }
 
 /* Utility classes to change name alignment and font */
