@@ -256,6 +256,13 @@ nav a.active {
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Nudge bio text upward slightly so it lines up with the profile image */
+@media (min-width: 701px) {
+  .bio-col {
+    transform: translateY(-8px);
+  }
+}
+
 .bio-col p {
   margin-top: 0;
   margin-bottom: 1em;
