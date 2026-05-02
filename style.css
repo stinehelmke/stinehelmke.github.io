@@ -122,6 +122,27 @@ nav a.active {
   display: inline-block;
 }
 
+/* Intro styles: larger Hi and pill-like email link */
+.intro-hi {
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0 0 6px;
+}
+
+.intro-pill {
+  display: inline-block;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.intro-pill:hover {
+  background: rgba(255,255,255,0.12);
+}
+
 /* Utility classes to change name alignment and font */
 .hero-name--left { text-align: left; }
 .hero-name--center { text-align: center; }
