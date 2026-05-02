@@ -28,7 +28,8 @@ a:hover {
 
 /* ── Site Header / Navbar ─────────────────────── */
 .site-header {
-  background: #111;
+  /* Softer blue header to blend with the hero image */
+  background: linear-gradient(135deg, #0a66c2 0%, #28527a 100%);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -64,7 +65,7 @@ nav {
 }
 
 nav a {
-  color: #ccc;
+  color: rgba(255,255,255,0.95);
   text-decoration: none;
   font-family: inherit; /* inherit Quicksand */
   font-size: 0.95rem;
@@ -112,13 +113,13 @@ nav a.active {
   /* softer, rounded look */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
-  /* larger hero name; scales from 1.8rem up to 3.2rem */
-  font-size: clamp(1.8rem, 6.5vw, 3.2rem);
+  /* even larger hero name; scales from 2.2rem up to 4.0rem */
+  font-size: clamp(2.2rem, 8.5vw, 4.0rem);
   color: #fff;
   margin: 0 0 12px;
   letter-spacing: 0.02em;
   line-height: 1.05;
-  padding: 8px 14px;
+  padding: 10px 18px;
   background: rgba(255,255,255,0.08);
   border-radius: 999px; /* pill */
   display: inline-block;
@@ -185,22 +186,30 @@ nav a.active {
 .profile-col {
   flex-shrink: 0;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
 
 .profile-social {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 8px;
+  flex-direction: row;
+  gap: 14px;
+  padding-top: 12px;
+  justify-content: center;
 }
 
 .social-icon {
-  font-size: 1.8rem;
+  font-size: 1.6rem; /* slightly larger icons */
   text-decoration: none;
   line-height: 1;
-  transition: opacity 0.2s;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+  color: inherit;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
 }
 
 .social-icon .fa-linkedin {
