@@ -1,63 +1,225 @@
+/* ── Reset & Base ─────────────────────────────── */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Georgia, serif;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  line-height: 1.6;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.7;
   color: #222;
-  background: #fafafa;
-}
-
-nav {
-  margin-bottom: 50px;
-  text-align: right;
-}
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.home {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-}
-
-.profile-photo {
-  width: 230px;
-  border-radius: 6px;
-}
-
-h1 {
-  font-size: 2.2rem;
-  margin-top: 0;
+  background: #fff;
 }
 
 a {
-  color: #2a5db0;
+  color: inherit;
+  text-decoration: underline;
 }
 
+a:hover {
+  opacity: 0.75;
+}
+
+/* ── Site Header / Navbar ─────────────────────── */
+.site-header {
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 56px;
+}
+
+.site-title {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+}
+
+.site-title:hover {
+  opacity: 0.8;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fff;
+  border-bottom-color: #fff;
+  opacity: 1;
+}
+
+/* ── Hero Section ─────────────────────────────── */
+.hero {
+  width: 100%;
+  min-height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-color: #444; /* fallback when no image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* dark overlay to keep text readable over any image */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.hero-name {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.4rem, 7vw, 5.5rem);
+  color: #fff;
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.hero-links {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ── Content Section ──────────────────────────── */
+.content-section {
+  padding: 60px 0 60px 0;
+}
+
+.content-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+  padding-right: 40px;
+}
+
+.profile-col {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.profile-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  text-decoration: none;
+  line-height: 1;
+  transition: opacity 0.2s;
+}
+
+.social-icon .fa-linkedin {
+  color: #0a66c2;
+}
+
+.social-icon .fa-envelope {
+  color: #555;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+.profile-photo {
+  width: 380px;
+  display: block;
+  border-radius: 4px;
+}
+
+.bio-col {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.bio-col p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* ── Inner page main (Research, Teaching) ─────── */
+.page-main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.page-main h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+/* ── Responsive ───────────────────────────────── */
 @media (max-width: 700px) {
-  .home {
+  .content-inner {
     flex-direction: column;
-  }
-
-  nav {
-    text-align: left;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0 15px 10px 0;
+    gap: 32px;
   }
 
   .profile-photo {
-    width: 180px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    gap: 12px;
   }
 }

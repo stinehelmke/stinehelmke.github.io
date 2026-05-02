@@ -2,32 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stine Solveig Helmke</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="cv.pdf">CV</a>
-  </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="CV.pdf">CV</a>
+      </nav>
+    </div>
+  </header>
 
-  <main class="home">
-    <img src="photo.jpg" alt="Photo of Your Name" class="profile-photo">
+  <section class="hero" style="background-image: url('assets/images/banner.png');">
+    <div class="hero-content">
+      <h1 class="hero-name">Stine Solveig Helmke</h1>
+    </div>
+  </section>
 
-    <section>
-      <h1>Your Name</h1>
-      <p>
-        Short intro text goes here.
-      </p>
-
-      <p>
-        <a href="YOUR-TWITTER-LINK">Twitter/X</a> |
-        <a href="YOUR-LINKEDIN-LINK">LinkedIn</a>
-      </p>
-    </section>
+  <main class="content-section">
+    <div class="content-inner">
+      <div class="profile-col">
+        <img src="assets/images/profile.JPEG" alt="Photo of Your Name" class="profile-photo">
+        <div class="profile-social">
+          <a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" aria-label="LinkedIn" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:stine.helmke@uzh.ch" aria-label="Email" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="bio-col">
+        <p>Welcome to my page!</p>
+        <p>
+          This is the page of Stine mimini Helmke! I'm stil trying to figure out what I want to do with my life, especially with this page
+        </p>
+      </div>
+    </div>
   </main>
 
 </body>
