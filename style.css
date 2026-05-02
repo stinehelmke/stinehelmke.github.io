@@ -10,7 +10,8 @@ html {
 
 body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', serif;
+  /* Use Quicksand site-wide (rounded display font). Quicksand is loaded in index.html */
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.7;
   color: #222;
   background: #fff;
@@ -47,7 +48,7 @@ a:hover {
 .site-title {
   color: #fff;
   text-decoration: none;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: inherit; /* inherit Quicksand from body */
   font-size: 1.05rem;
   letter-spacing: 0.02em;
 }
@@ -65,7 +66,7 @@ nav {
 nav a {
   color: #ccc;
   text-decoration: none;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: inherit; /* inherit Quicksand */
   font-size: 0.95rem;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
@@ -126,7 +127,7 @@ nav a.active {
 .intro-hi {
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   margin: 0 0 6px;
 }
 
@@ -222,6 +223,8 @@ nav a.active {
 .bio-col {
   flex: 1;
   font-size: 1rem;
+  /* Use the same rounded font for intro/body to match Hi */
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .bio-col p {
