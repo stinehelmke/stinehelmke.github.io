@@ -111,8 +111,9 @@ nav a.active {
 .hero-name {
   /* softer, rounded look */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 600;
-  font-size: clamp(1.4rem, 4.5vw, 2.4rem);
+  font-weight: 700;
+  /* larger hero name; scales from 1.8rem up to 3.2rem */
+  font-size: clamp(1.8rem, 6.5vw, 3.2rem);
   color: #fff;
   margin: 0 0 12px;
   letter-spacing: 0.02em;
@@ -127,7 +128,7 @@ nav a.active {
 .intro-hi {
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
-  font-size: 1.45rem;
+  font-size: 1.6rem;
   margin: 0 0 6px;
 }
 
