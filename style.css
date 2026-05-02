@@ -259,7 +259,7 @@ nav a.active {
 /* Nudge bio text upward slightly so it lines up with the profile image */
 @media (min-width: 701px) {
   .bio-col {
-    transform: translateY(-30px);
+    transform: translateY(-34px);
   }
 }
 
