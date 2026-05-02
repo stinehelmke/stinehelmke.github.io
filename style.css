@@ -230,6 +230,24 @@ nav a.active {
   border-radius: 4px;
 }
 
+/* Make the profile image rounded and overlap the hero/banner */
+.profile-photo--overlap {
+  border-radius: 18px; /* rounded rectangle; we'll increase to 50% below when desired */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  position: relative;
+  top: -60px; /* move up to overlap hero */
+  transition: top 0.2s ease, transform 0.15s ease;
+}
+
+/* On small screens, don't overlap too much and keep a circular crop */
+@media (max-width: 700px) {
+  .profile-photo--overlap {
+    top: -40px;
+    width: 160px;
+    border-radius: 50%;
+  }
+}
+
 .bio-col {
   flex: 1;
   font-size: 1rem;
