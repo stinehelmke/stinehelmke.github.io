@@ -297,3 +297,43 @@ nav a.active {
     gap: 12px;
   }
 }
+
+/* Teaching list styles */
+.teaching-list h2 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.15rem;
+}
+
+.positions {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.positions .pos {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 6px 0;
+}
+
+.pos-year {
+  color: #666;
+  min-width: 120px;
+  font-size: 0.95rem;
+}
+
+.pos.ta::before,
+.pos.tutor::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  margin-right: 6px;
+}
+
+.pos.ta::before { content: "\f0c8"; /* fa-square */ color: #28527a; }
+.pos.tutor::before { content: "\f02d"; /* fa-book */ color: #28527a; }
