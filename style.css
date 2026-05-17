@@ -313,9 +313,10 @@ nav a.active {
 }
 
 .positions .pos {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 28px 140px 1fr; /* icon | year | description */
+  gap: 8px 16px;
+  align-items: start;
   padding: 6px 0;
 }
 
@@ -325,15 +326,29 @@ nav a.active {
   font-size: 0.95rem;
 }
 
-.pos.ta::before,
-.pos.tutor::before {
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  display: inline-block;
-  width: 20px;
-  text-align: center;
-  margin-right: 6px;
+.pos-icon {
+  color: #28527a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  width: 28px;
+  height: 28px;
 }
 
-.pos.ta::before { content: "\f0c8"; /* fa-square */ color: #28527a; }
-.pos.tutor::before { content: "\f02d"; /* fa-book */ color: #28527a; }
+.pos-desc {
+  display: block;
+}
+
+/* Small screens: switch back to stacked layout so items wrap nicely */
+@media (max-width: 700px) {
+  .positions .pos {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .pos-icon { font-size: 0.95rem; }
+  .pos-year { min-width: 90px; }
+}
