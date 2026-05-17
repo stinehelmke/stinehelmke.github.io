@@ -352,3 +352,19 @@ nav a.active {
   .pos-icon { font-size: 0.95rem; }
   .pos-year { min-width: 90px; }
 }
+
+/* Research list styles */
+.research-list h2 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.15rem;
+}
+
+.research-block {
+  margin-bottom: 4rem;
+}
+
+.research-meta {
+  color: #666;
+  font-size: 0.95rem;
+}
