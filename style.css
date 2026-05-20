@@ -86,7 +86,7 @@ nav a.active {
   width: 100%;
   min-height: 30vh;
   background-size: cover;
-  background-position: center 42%;
+  background-position: center 44%;
   background-color: #444; /* fallback when no image */
   display: flex;
   align-items: center;
