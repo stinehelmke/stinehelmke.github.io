@@ -286,8 +286,8 @@ nav a.active {
   background: linear-gradient(135deg, #7fb7e8 0%, #4f8fc7 100%);
   color: #fff;
   text-align: left;
-  padding: 16px 20px 18px;
-  font-size: 0.95rem;
+  padding: 14px 20px 15px;
+  font-size: 0.8rem;
   margin-top: 32px;
 }
 
