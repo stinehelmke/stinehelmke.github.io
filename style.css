@@ -28,8 +28,8 @@ a:hover {
 
 /* ── Site Header / Navbar ─────────────────────── */
 .site-header {
-  /* Softer blue header to blend with the hero image */
-  background: linear-gradient(135deg, #0a66c2 0%, #28527a 100%);
+  /* Soft sky-blue to match the hero image */
+  background: linear-gradient(135deg, #7fb7e8 0%, #4f8fc7 100%);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -283,9 +283,9 @@ nav a.active {
 /* ── Footer ─────────────────────────────────── */
 .site-footer {
   width: 100%;
-  background: linear-gradient(135deg, #4f8fc7 0%, #6fa6d6 100%);
+  background: linear-gradient(135deg, #7fb7e8 0%, #4f8fc7 100%);
   color: #fff;
-  text-align: center;
+  text-align: left;
   padding: 16px 20px 18px;
   font-size: 0.95rem;
   margin-top: 32px;
