@@ -389,7 +389,7 @@ nav a.active {
 }
 
 .research-block.non-econ {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .research-items {
@@ -400,20 +400,7 @@ nav a.active {
 }
 
 .research-items li {
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 8px 16px;
-  align-items: start;
   padding: 6px 0;
-}
-
-.research-icon {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-top: 8px;
-  background: #28527a;
-  border-radius: 2px;
 }
 
 .research-title {
@@ -428,7 +415,7 @@ nav a.active {
   display: inline-block;
   width: 0.4em;
   height: 0.4em;
-  background-color: currentColor;
+  background-color: #28527a;
   margin-right: 0.5em;
   vertical-align: middle;
 }
@@ -437,17 +424,4 @@ nav a.active {
   color: #666;
   font-size: 0.92rem;
   line-height: 1.5;
-}
-
-@media (max-width: 700px) {
-  .research-items li {
-    grid-template-columns: 24px 1fr;
-    gap: 8px 12px;
-  }
-
-  .research-icon {
-    font-size: 0.95rem;
-    width: 24px;
-    height: 24px;
-  }
 }
