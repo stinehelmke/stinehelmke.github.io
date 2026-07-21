@@ -84,9 +84,9 @@ nav a.active {
 /* ── Hero Section ─────────────────────────────── */
 .hero {
   width: 100%;
-  min-height: 30vh;
+  min-height: 56vh;
   background-size: cover;
-  background-position: center 38%;
+  background-position: center 35%;
   background-color: #444; /* fallback when no image */
   display: flex;
   align-items: center;
