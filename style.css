@@ -253,8 +253,10 @@ nav a.active {
   border-radius: 18px; /* rounded rectangle */
   box-shadow: 0 8px 20px rgba(0,0,0,0.22);
   position: relative;
-  transform: translateY(0); /* align with the first paragraph below the welcome line */
+  transform: translateY(0);
   width: 320px; /* slightly smaller on desktop */
+  margin-top: 0.25rem;
+  margin-bottom: 0.2rem;
   transition: transform 0.2s ease;
 }
 
@@ -270,17 +272,20 @@ nav a.active {
 .bio-col {
   flex: 1;
   font-size: 1rem;
-  padding-top: 0.2rem; /* align with the first substantive paragraph, not the welcome line */
+  padding-top: 0.4rem; /* align with the first substantive paragraph, not the welcome line */
   /* Use the same rounded font for intro/body to match Hi */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.bio-col p {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 701px) {
   .bio-col {
     transform: translateY(0);
-.bio-col p {
-  margin-top: 0;
-  margin-bottom: 1em;
+  }
 }
 
 /* ── Inner page main (Research, Teaching) ─────── */
@@ -303,6 +308,7 @@ nav a.active {
   text-align: left;
   padding: 14px 20px 15px;
   font-size: 0.8rem;
+  line-height: 1.4;
   margin-top: 32px;
 }
 
