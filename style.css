@@ -272,7 +272,7 @@ nav a.active {
 .bio-col {
   flex: 1;
   font-size: 1rem;
-  padding-top: 0.4rem; /* align with the first substantive paragraph, not the welcome line */
+  padding-top: 0.15rem; /* slight upward lift to align with the image while keeping a small margin */
   /* Use the same rounded font for intro/body to match Hi */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
