@@ -179,7 +179,7 @@ nav a.active {
   margin: 0 auto;
   display: flex;
   gap: 56px;
-  align-items: center; /* vertically center profile + bio */
+  align-items: flex-start; /* keep the profile aligned with the top of the bio text */
   padding: 0 32px 0 32px;
 }
 
@@ -235,7 +235,7 @@ nav a.active {
   border-radius: 18px; /* rounded rectangle */
   box-shadow: 0 8px 20px rgba(0,0,0,0.22);
   position: relative;
-  transform: translateY(-18px); /* slight lift to overlap hero while staying centered */
+  transform: translateY(0); /* align with the first paragraph below the welcome line */
   width: 320px; /* slightly smaller on desktop */
   transition: transform 0.2s ease;
 }
@@ -252,17 +252,14 @@ nav a.active {
 .bio-col {
   flex: 1;
   font-size: 1rem;
+  padding-top: 0.6rem; /* keep the first paragraph aligned with the image top */
   /* Use the same rounded font for intro/body to match Hi */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Nudge bio text upward slightly so it lines up with the profile image */
 @media (min-width: 701px) {
   .bio-col {
-    transform: translateY(-34px);
-  }
-}
-
+    transform: translateY(0);
 .bio-col p {
   margin-top: 0;
   margin-bottom: 1em;
