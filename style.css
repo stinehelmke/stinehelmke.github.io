@@ -179,7 +179,7 @@ nav a.active {
   margin: 0 auto;
   display: flex;
   gap: 56px;
-  align-items: flex-start; /* keep the profile aligned with the top of the bio text */
+  align-items: flex-start;
   padding: 0 32px 0 32px;
 }
 
@@ -283,6 +283,10 @@ nav a.active {
 }
 
 @media (min-width: 701px) {
+  .content-inner {
+    align-items: center;
+  }
+
   .bio-col {
     transform: translateY(0);
   }
