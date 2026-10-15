@@ -417,6 +417,10 @@ nav a.active {
   margin-top: 0;
 }
 
+.research-block.work-in-progress .research-items li + li {
+  margin-top: 1rem;
+}
+
 .research-items {
   list-style: none;
   padding-left: 0;
@@ -441,12 +445,8 @@ nav a.active {
 
 .research-meta {
   color: #666;
-  font-size: 0.85rem;
-  line-height: 1.5;
-}
-
-.research-meta em {
   font-size: 0.78rem;
+  line-height: 1.5;
 }
 
 .research-draft {
