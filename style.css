@@ -445,6 +445,10 @@ nav a.active {
   line-height: 1.5;
 }
 
+.research-meta em {
+  font-size: 0.78rem;
+}
+
 .research-draft {
   margin-left: 0.35em;
 }
