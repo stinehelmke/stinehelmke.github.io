@@ -454,6 +454,68 @@ nav a.active {
   margin-left: 0.35em;
 }
 
+.research-abstract {
+  margin-top: 0.65rem;
+}
+
+.research-abstract summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #b8ccdb;
+  border-radius: 4px;
+  background: #eaf2f8;
+  color: #28527a;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.research-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.research-abstract summary::after {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  content: "";
+  transform: translateY(-0.12rem) rotate(45deg);
+  transition: transform 0.15s ease;
+}
+
+.research-abstract[open] summary::after {
+  transform: translateY(0.1rem) rotate(225deg);
+}
+
+.research-abstract summary:hover {
+  border-color: #8caec5;
+  background: #dceaf4;
+}
+
+.research-abstract summary:focus-visible {
+  outline: 2px solid #28527a;
+  outline-offset: 2px;
+}
+
+.research-abstract-content {
+  margin-top: 0.65rem;
+  padding: 12px 16px;
+  border-left: 3px solid #6b9bbb;
+  background: #f2f7fa;
+  color: #3d4b55;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.research-abstract-content p {
+  margin: 0;
+}
+
 .research-title::before {
   content: "";
   display: inline-block;
