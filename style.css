@@ -387,6 +387,7 @@ nav a.active {
 
 .pos-desc {
   display: block;
+  font-size: 0.98rem;
 }
 
 /* Small screens: switch back to stacked layout so items wrap nicely */
