@@ -462,9 +462,9 @@ nav a.active {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.45rem 0.75rem;
+  padding: 0.35rem 0.65rem;
   border: 1px solid #b8ccdb;
-  border-radius: 4px;
+  border-radius: 999px;
   background: #eaf2f8;
   color: #28527a;
   font-size: 0.82rem;
@@ -504,7 +504,7 @@ nav a.active {
 
 .research-abstract-content {
   margin-top: 0.65rem;
-  padding: 12px 16px;
+  padding: 9px 12px;
   border-left: 3px solid #6b9bbb;
   background: #f2f7fa;
   color: #3d4b55;
