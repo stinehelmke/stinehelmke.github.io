@@ -171,18 +171,16 @@ nav a.active {
 
 /* ── Content Section ──────────────────────────── */
 .content-section {
-  position: relative;
-  z-index: 1;
-  margin-top: -2.5rem;
-  padding: 0 0 60px;
+  padding: 32px 0 60px;
 }
 
 .content-inner {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
-  gap: 56px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
   padding: 0 32px 0 32px;
 }
 
@@ -251,32 +249,20 @@ nav a.active {
   border-radius: 4px;
 }
 
-/* Make the profile image rounded and overlap the hero/banner */
-.profile-photo--overlap {
+/* Center the profile image below the hero banner */
+.profile-photo--home {
   border-radius: 18px; /* rounded rectangle */
   box-shadow: 0 8px 20px rgba(0,0,0,0.22);
-  position: relative;
-  transform: translateY(0);
-  width: 240px;
-  margin-top: 0.25rem;
-  margin-bottom: 0.2rem;
-  transition: transform 0.2s ease;
-}
-
-/* On small screens, don't overlap too much and keep a circular crop */
-@media (max-width: 700px) {
-  .profile-photo--overlap {
-    transform: translateY(-6px);
-    width: 120px;
-    border-radius: 50%;
-  }
+  width: 210px;
 }
 
 .bio-col {
-  flex: 1;
+  width: 100%;
+  max-width: 760px;
   font-size: 0.85rem;
   line-height: 1.45;
-  padding-top: 0.15rem; /* slight upward lift to align with the image while keeping a small margin */
+  padding-top: 0;
+  text-align: center;
   /* Use the same rounded font for intro/body to match Hi */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -284,16 +270,6 @@ nav a.active {
 .bio-col p {
   margin-top: 0;
   margin-bottom: 1em;
-}
-
-@media (min-width: 900px) {
-  .content-inner {
-    align-items: center;
-  }
-
-  .bio-col {
-    transform: none;
-  }
 }
 
 /* ── Inner page main (Research, Teaching) ─────── */
@@ -325,43 +301,13 @@ nav a.active {
 }
 
 /* ── Responsive ───────────────────────────────── */
-@media (min-width: 701px) and (max-width: 899px) {
-  .content-section {
-    margin-top: -1.5rem;
-  }
-
-  .content-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .profile-photo--overlap {
-    width: 160px;
-    border-radius: 50%;
-    transform: translateY(-6px);
-  }
-
-  .bio-col {
-    align-self: stretch;
-    transform: none;
-  }
-}
-
 @media (max-width: 700px) {
-  .content-section {
-    margin-top: -1.5rem;
-  }
-
   .content-inner {
-    flex-direction: column;
-    gap: 24px;
     padding: 0 24px;
   }
 
-  .profile-photo {
-    width: 100%;
-    max-width: 320px;
+  .profile-photo--home {
+    width: 180px;
   }
 
   .hero-links {
