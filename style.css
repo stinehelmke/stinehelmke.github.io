@@ -257,7 +257,7 @@ nav a.active {
   box-shadow: 0 8px 20px rgba(0,0,0,0.22);
   position: relative;
   transform: translateY(0);
-  width: 260px;
+  width: 240px;
   margin-top: 0.25rem;
   margin-bottom: 0.2rem;
   transition: transform 0.2s ease;
@@ -267,15 +267,15 @@ nav a.active {
 @media (max-width: 700px) {
   .profile-photo--overlap {
     transform: translateY(-6px);
-    width: 140px;
+    width: 120px;
     border-radius: 50%;
   }
 }
 
 .bio-col {
   flex: 1;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.85rem;
+  line-height: 1.45;
   padding-top: 0.15rem; /* slight upward lift to align with the image while keeping a small margin */
   /* Use the same rounded font for intro/body to match Hi */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
@@ -337,7 +337,7 @@ nav a.active {
   }
 
   .profile-photo--overlap {
-    width: 180px;
+    width: 160px;
     border-radius: 50%;
     transform: translateY(-6px);
   }
