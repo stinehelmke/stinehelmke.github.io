@@ -395,13 +395,17 @@ nav a.active {
 
 /* Research list styles */
 .research-list h2 {
-  margin-top: 1.25rem;
-  margin-bottom: 0.25rem;
-  font-size: 1.15rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #cbd9e3;
+  color: #28527a;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .research-block {
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.5rem;
 }
 
 .research-block.non-econ {
