@@ -253,7 +253,7 @@ nav a.active {
 .profile-photo--home {
   border-radius: 18px; /* rounded rectangle */
   box-shadow: 0 8px 20px rgba(0,0,0,0.22);
-  width: 280px;
+  width: 260px;
 }
 
 .bio-col {
@@ -271,6 +271,12 @@ nav a.active {
 .bio-col p {
   margin-top: 0;
   margin-bottom: 1em;
+}
+
+@media (min-width: 701px) {
+  .bio-col {
+    transform: translateY(-40px);
+  }
 }
 
 /* ── Inner page main (Research, Teaching) ─────── */
@@ -311,6 +317,10 @@ nav a.active {
 
   .profile-photo--home {
     width: 220px;
+  }
+
+  .bio-col {
+    transform: none;
   }
 
   .hero-links {
