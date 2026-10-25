@@ -175,11 +175,12 @@ nav a.active {
 }
 
 .content-inner {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
   padding: 0 32px 0 32px;
 }
 
@@ -252,16 +253,16 @@ nav a.active {
 .profile-photo--home {
   border-radius: 18px; /* rounded rectangle */
   box-shadow: 0 8px 20px rgba(0,0,0,0.22);
-  width: 210px;
+  width: 280px;
 }
 
 .bio-col {
-  flex: 1;
+  width: 100%;
   max-width: 760px;
   font-size: 0.85rem;
   line-height: 1.45;
   padding-top: 0;
-  text-align: left;
+  text-align: center;
   /* Use the same rounded font for intro/body to match Hi */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -302,13 +303,11 @@ nav a.active {
 /* ── Responsive ───────────────────────────────── */
 @media (max-width: 700px) {
   .content-inner {
-    flex-direction: column;
-    gap: 24px;
     padding: 0 24px;
   }
 
   .profile-photo--home {
-    width: 180px;
+    width: 220px;
   }
 
   .hero-links {
