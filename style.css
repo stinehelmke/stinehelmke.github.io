@@ -175,12 +175,12 @@ nav a.active {
 }
 
 .content-inner {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 24px;
+  gap: 40px;
   padding: 0 32px 0 32px;
 }
 
@@ -257,12 +257,13 @@ nav a.active {
 }
 
 .bio-col {
-  width: 100%;
+  flex: 1;
   max-width: 760px;
+  min-width: 0;
   font-size: 0.85rem;
   line-height: 1.45;
   padding-top: 0;
-  text-align: center;
+  text-align: left;
   /* Use the same rounded font for intro/body to match Hi */
   font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -303,6 +304,8 @@ nav a.active {
 /* ── Responsive ───────────────────────────────── */
 @media (max-width: 700px) {
   .content-inner {
+    flex-direction: column;
+    gap: 24px;
     padding: 0 24px;
   }
 
