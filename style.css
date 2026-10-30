@@ -554,3 +554,7 @@ nav a.active {
 .research-meta a[href^="mailto:"] {
   color: #28527a;
 }
+
+.research-version-link a {
+  color: #28527a;
+}
