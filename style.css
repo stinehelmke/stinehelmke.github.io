@@ -397,14 +397,31 @@ nav a.active {
 /* Small screens: switch back to stacked layout so items wrap nicely */
 @media (max-width: 700px) {
   .positions .pos {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 4px 10px;
+    align-items: start;
+    padding: 8px 0;
   }
 
-  .pos-icon { font-size: 0.95rem; }
-  .pos-year { min-width: 90px; }
+  .pos-icon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    font-size: 0.9rem;
+  }
+
+  .pos-year {
+    grid-column: 2;
+    min-width: 0;
+    font-size: 0.72rem;
+  }
+
+  .pos-desc {
+    grid-column: 2;
+    line-height: 1.4;
+  }
 }
 
 /* Research list styles */
