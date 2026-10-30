@@ -476,7 +476,8 @@ nav a.active {
 }
 
 .research-draft {
-  margin-left: 0.35em;
+  display: block;
+  margin-left: 0;
 }
 
 .research-abstract {
