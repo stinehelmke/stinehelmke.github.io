@@ -260,7 +260,7 @@ nav a.active {
 .profile-photo--home {
   border-radius: 18px; /* rounded rectangle */
   box-shadow: 0 8px 20px rgba(0,0,0,0.22);
-  width: 260px;
+  width: 280px;
 }
 
 .bio-col {
@@ -282,6 +282,7 @@ nav a.active {
 
 @media (min-width: 701px) {
   .bio-col {
+    order: -1;
     transform: translateY(-40px);
   }
 }
@@ -323,7 +324,7 @@ nav a.active {
   }
 
   .profile-photo--home {
-    width: 220px;
+    width: 230px;
   }
 
   .bio-col {
