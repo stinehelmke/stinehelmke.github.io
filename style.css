@@ -282,7 +282,6 @@ nav a.active {
 
 @media (min-width: 701px) {
   .bio-col {
-    order: -1;
     transform: translateY(-40px);
   }
 }
