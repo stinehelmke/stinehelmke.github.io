@@ -161,7 +161,7 @@ nav a.active {
   .home-page .profile-photo--home {
     grid-row: 1 / 4;
     align-self: center;
-    width: 160px;
+    width: 190px;
   }
 
   .home-page .profile-social {
