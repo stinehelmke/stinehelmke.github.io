@@ -226,22 +226,28 @@ nav a.active {
   background: rgba(0, 0, 0, 0.35);
 }
 
-.hero-jmp-link {
+.hero a.hero-jmp-link {
   position: relative;
   z-index: 1;
-  padding: 6px 12px;
+  padding: 4px 8px;
   border-radius: 4px;
   background: rgba(25, 35, 40, 0.42);
   color: #fff;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.55rem;
+  font-weight: 500;
   line-height: 1.25;
   text-align: center;
-  text-decoration: none;
+  text-decoration-line: none;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
 }
 
-.hero-jmp-link:hover {
+.hero a.hero-jmp-link:hover,
+.hero a.hero-jmp-link:visited,
+.hero a.hero-jmp-link:focus {
+  text-decoration-line: none;
+}
+
+.hero a.hero-jmp-link:hover {
   opacity: 1;
   background: rgba(25, 35, 40, 0.58);
 }
