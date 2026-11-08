@@ -125,7 +125,7 @@ nav a.active {
   .home-page .hero {
     order: 2;
     width: min(calc(100% - 64px), 986px);
-    aspect-ratio: 3.3 / 1;
+    aspect-ratio: 3.8 / 1;
     min-height: 0;
     margin: 24px auto;
     border-radius: 20px;
@@ -175,15 +175,40 @@ nav a.active {
   }
 
   .home-page .content-inner {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    grid-template-rows: auto auto;
     max-width: 1050px;
-    gap: 36px;
-    align-items: stretch;
+    column-gap: 36px;
+    row-gap: 24px;
+    align-items: center;
+  }
+
+  .home-page .profile-col {
+    display: contents;
+  }
+
+  .home-page .profile-identity {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .home-page .profile-links {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    gap: 8px;
+  }
+
+  .home-page .profile-email {
+    margin-top: 0;
   }
 
   .home-page .bio-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
     transform: none;
   }
 
@@ -289,6 +314,28 @@ nav a.active {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+}
+
+.profile-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-name {
+  margin: 0;
+  color: #263b4b;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .profile-social {
