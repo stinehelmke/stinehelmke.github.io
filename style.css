@@ -128,7 +128,7 @@ nav a.active {
 
   .home-page .content-section {
     flex: none;
-    padding: 24px 0 47px;
+    padding: 24px 0 53px;
   }
 
   .home-page .site-footer {
@@ -196,7 +196,7 @@ nav a.active {
     height: 254px;
     min-height: 0;
     margin: 0;
-    transform: translateY(24px);
+    transform: translateY(30px);
     border-radius: 20px;
     background-size: cover;
     background-position: center;
