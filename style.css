@@ -124,8 +124,8 @@ nav a.active {
 
   .home-page .hero {
     order: 2;
-    width: min(calc(100% - 64px), 986px);
-    aspect-ratio: 4.8 / 1;
+    width: min(calc(100% - 64px), 520px);
+    aspect-ratio: 2999 / 1187;
     min-height: 0;
     margin: 24px auto;
     border-radius: 20px;
