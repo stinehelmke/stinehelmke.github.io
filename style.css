@@ -144,7 +144,7 @@ nav a.active {
 
   .home-page .content-section {
     flex: none;
-    padding: 24px 0 0;
+    padding: 36px 0 0;
   }
 
   .home-page .site-footer {
@@ -152,52 +152,44 @@ nav a.active {
   }
 
   .home-page .profile-col {
-    display: grid;
-    grid-template-rows: minmax(0, 1fr) auto auto;
-    align-self: stretch;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 8px;
   }
 
   .home-page .profile-photo--home {
-    grid-row: 1 / 4;
-    align-self: center;
+    max-width: 100%;
     width: 340px;
   }
 
   .home-page .profile-social {
-    grid-row: 2;
     padding-top: 0;
   }
 
   .home-page .profile-email {
-    grid-row: 3;
     margin-top: 0;
   }
 
   .home-page .content-inner {
-    display: grid;
-    grid-template-columns: 350px minmax(0, 1fr);
-    grid-template-rows: auto auto;
-    max-width: 1050px;
-    column-gap: 36px;
-    row-gap: 8px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 18px;
+    max-width: 860px;
   }
 
   .home-page .profile-col {
-    display: contents;
+    width: 100%;
   }
 
   .home-page .profile-identity {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
+    order: 1;
   }
 
   .home-page .profile-links {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: center;
+    order: 2;
     gap: 2px;
   }
 
@@ -206,11 +198,13 @@ nav a.active {
   }
 
   .home-page .bio-col {
-    grid-column: 2;
-    grid-row: 1;
+    order: 1;
+    width: 100%;
     max-width: 620px;
-    align-self: start;
-    transform: translateY(-8px);
+    min-height: 254px;
+    align-self: center;
+    padding-top: 12px;
+    transform: none;
   }
 
   .home-page .bio-col {
@@ -497,10 +491,25 @@ nav a.active {
   }
 
   .profile-photo--home {
-    width: 330px;
+    width: min(330px, 100%);
   }
 
-  .bio-col {
+  .home-page .content-section {
+    padding-top: 28px;
+  }
+
+  .home-page .content-inner {
+    gap: 18px;
+  }
+
+  .home-page .profile-col {
+    order: 2;
+  }
+
+  .home-page .bio-col {
+    order: 1;
+    min-height: 246px;
+    padding-top: 12px;
     transform: none;
   }
 
