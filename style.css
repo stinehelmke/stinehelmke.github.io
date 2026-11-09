@@ -161,7 +161,7 @@ nav a.active {
   .home-page .profile-photo--home {
     grid-row: 1 / 4;
     align-self: center;
-    width: 250px;
+    width: 280px;
   }
 
   .home-page .profile-social {
@@ -176,7 +176,7 @@ nav a.active {
 
   .home-page .content-inner {
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-columns: 290px minmax(0, 1fr);
     grid-template-rows: auto auto;
     max-width: 1050px;
     column-gap: 36px;
@@ -208,6 +208,7 @@ nav a.active {
   .home-page .bio-col {
     grid-column: 2;
     grid-row: 1;
+    max-width: 620px;
     align-self: start;
     transform: translateY(12px);
   }
@@ -496,7 +497,7 @@ nav a.active {
   }
 
   .profile-photo--home {
-    width: 270px;
+    width: 280px;
   }
 
   .bio-col {
