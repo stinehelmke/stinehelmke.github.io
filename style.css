@@ -128,7 +128,7 @@ nav a.active {
 
   .home-page .content-section {
     flex: none;
-    padding: 24px 0 8px;
+    padding: 24px 0 12px;
   }
 
   .home-page .site-footer {
@@ -183,7 +183,7 @@ nav a.active {
     max-width: 620px;
     min-height: 0;
     align-self: stretch;
-    padding-top: 8px;
+    padding-top: 6px;
     transform: none;
     font-size: 0.9rem;
     line-height: 1.55;
@@ -196,7 +196,7 @@ nav a.active {
     height: 254px;
     min-height: 0;
     margin: 0;
-    transform: translateY(8px);
+    transform: translateY(12px);
     border-radius: 20px;
     background-size: cover;
     background-position: center;
@@ -220,13 +220,13 @@ nav a.active {
 .hero a.hero-jmp-link {
   position: relative;
   z-index: 1;
-  padding: 6px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 999px;
-  background: rgba(25, 35, 40, 0.55);
+  background: rgba(25, 35, 40, 0.68);
   color: #fff;
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 600;
   line-height: 1.25;
   text-align: center;
   text-decoration-line: none;
@@ -242,7 +242,7 @@ nav a.active {
 
 .hero a.hero-jmp-link:hover {
   opacity: 1;
-  background: rgba(25, 35, 40, 0.78);
+  background: rgba(25, 35, 40, 0.84);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
