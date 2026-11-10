@@ -196,7 +196,7 @@ nav a.active {
     height: 254px;
     min-height: 0;
     margin: 0;
-    transform: translateY(27px);
+    transform: translateY(23px);
     border-radius: 20px;
     background-size: cover;
     background-position: center;
