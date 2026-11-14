@@ -106,7 +106,7 @@ nav a.active {
 }
 
 .home-page .content-section {
-  padding: 16px 0 24px;
+  padding: 25px 0 24px;
 }
 
 .home-page .site-footer {
@@ -128,7 +128,7 @@ nav a.active {
 
   .home-page .content-section {
     flex: none;
-    padding: 24px 0 53px;
+    padding: 33px 0 53px;
   }
 
   .home-page .site-footer {
@@ -196,7 +196,7 @@ nav a.active {
     height: 254px;
     min-height: 0;
     margin: 0;
-    transform: translateY(23px);
+    transform: translateY(29px);
     border-radius: 20px;
     background-size: cover;
     background-position: center;
@@ -505,7 +505,7 @@ nav a.active {
     width: min(100%, 520px);
     aspect-ratio: 2999 / 1187;
     min-height: 0;
-    margin: 0 auto;
+    margin: 6px auto 0;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
@@ -552,7 +552,7 @@ nav a.active {
     width: min(calc(100% - 48px), 520px);
     aspect-ratio: 2999 / 1187;
     min-height: 0;
-    margin: 0 auto;
+    margin: 6px auto 0;
     border-radius: 20px;
     background-size: cover;
     background-position: center;
